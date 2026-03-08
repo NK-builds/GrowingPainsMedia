@@ -58,7 +58,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all cards and steps
-document.querySelectorAll('.problem-card, .service-card, .step').forEach(el => {
+document.querySelectorAll('.problem-card, .service-card, .step, .pricing-card, .local-callout').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
